@@ -1,0 +1,10 @@
+.catalog:
+  name: "JetBrains UpSource"
+  version: "v2017.2.2057"
+  description: "JetBrains UpSource Code Review Tool"
+  questions:
+    - variable: upsource_http_port
+      decription: "HTTP Port "
+      label: "UpSource HTTP Port"
+      default: "8080"
+      type: "int"

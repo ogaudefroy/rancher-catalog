@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    upsource:
+      image: jetbrains/upsource:2017.2.2057
+      ports:
+        - ${upsource_http_port}:8080
+      volumes:
+        - /data/JetBrains/Upsource/volumes/opt/Upsource/data:/opt/Upsource/data
+        - /data/JetBrains/UpSource/volumes/opt/Upsource/conf:/opt/upsource/conf
+        - /data/JetBrains/UpSource/volumes/opt/Upsource/logs:/opt/upsource/logs
+        - /data/JetBrains/Upsource/volumes/opt/Upsource/backups:/opt/Upsource/backups
