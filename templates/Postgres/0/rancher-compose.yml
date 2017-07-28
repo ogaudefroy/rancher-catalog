@@ -1,0 +1,15 @@
+.catalog:
+  name: "Postgres"
+  version: "9.6.3 alpine"
+  description: "PostgreSQL 9.6.3 alpine"
+  questions:
+    - variable: postgres_password
+      decription: "superuser password"
+      label: "Postgres Password"
+      default: "postgres"
+      type: "string"
+    - variable: postgres_user
+      description: "superuser login"
+      labek: "Postgres Login"
+      default: "postgres"
+      type: "string"
