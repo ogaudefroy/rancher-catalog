@@ -3,6 +3,11 @@
   version: "9.6.3 alpine"
   description: "PostgreSQL 9.6.3 alpine"
   questions:
+    - variable: postgres_db
+      decription: "Postgres Database"
+      label: "Postgres DB"
+      default: "postgres"
+      type: "string"
     - variable: postgres_password
       decription: "superuser password"
       label: "Postgres Password"
@@ -13,3 +18,8 @@
       labek: "Postgres Login"
       default: "postgres"
       type: "string"
+    - variable: tcp_port
+      description: "TCP Listener port"
+      label: "TCP Port"
+      default: 5432
+      type: "int"
